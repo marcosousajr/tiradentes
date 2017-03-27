@@ -1,11 +1,11 @@
 package aula1;
 
-public class No<Chave extends Comparable<Chave>, Valor> {
+public class No<Chave extends Comparable<Chave> , Valor> {
 	
 	No<Chave, Valor> pai;
-	No<Chave, Valor> filhoEsquerdo;
-	No<Chave, Valor> filhoMeio;
-	No<Chave, Valor> filhoDireito;
+	No<Chave, Valor> esquerdo;
+	No<Chave, Valor> meio;
+	No<Chave, Valor> direito;
 
 	Chave chave;
 	Valor valor;
@@ -13,16 +13,20 @@ public class No<Chave extends Comparable<Chave>, Valor> {
 	public No(){ }
 	
 	
-	public No(No<Chave, Valor> pai, No<Chave, Valor> filhoEsquerdo, No<Chave, Valor> filhoMeio,
-			No<Chave, Valor> filhoDireito, Chave chave, Valor valor) {
-		this.pai = pai;
-		this.filhoEsquerdo = filhoEsquerdo;
-		this.filhoMeio = filhoMeio;
-		this.filhoDireito = filhoDireito;
-		this.chave = chave;
-		this.valor = valor;
+	public No(Chave chave, Valor valor, No<Chave, Valor> pai, No<Chave, Valor> esquerdo, No<Chave, Valor> meio,
+			No<Chave, Valor> direito) {
+		this.setChave(chave);
+		this.setValor(valor);
+		this.setPai(pai);
+		this.setEsquerdo(esquerdo);
+		this.setMeio(meio);
+		this.setDireito(direito);
 	}
 
+	public int comparaTo(Chave chv){
+		return this.getChave().compareTo(chv);
+	}
+	
 	public No<Chave, Valor> getPai() {
 		return pai;
 	}
@@ -31,28 +35,28 @@ public class No<Chave extends Comparable<Chave>, Valor> {
 		this.pai = pai;
 	}
 
-	public No<Chave, Valor> getFilhoEsquerdo() {
-		return filhoEsquerdo;
+	public No<Chave, Valor> getEsquerdo() {
+		return esquerdo;
 	}
 
-	public void setFilhoEsquerdo(No<Chave, Valor> filhoEsquerdo) {
-		this.filhoEsquerdo = filhoEsquerdo;
+	public void setEsquerdo(No<Chave, Valor> esquerdo) {
+		this.esquerdo = esquerdo;
 	}
 
-	public No<Chave, Valor> getFilhoMeio() {
-		return filhoMeio;
+	public No<Chave, Valor> getMeio() {
+		return meio;
 	}
 
-	public void setFilhoMeio(No<Chave, Valor> filhoMeio) {
-		this.filhoMeio = filhoMeio;
+	public void setMeio(No<Chave, Valor> meio) {
+		this.meio = meio;
 	}
 
-	public No<Chave, Valor> getFilhoDireito() {
-		return filhoDireito;
+	public No<Chave, Valor> getDireito() {
+		return direito;
 	}
 
-	public void setFilhoDireito(No<Chave, Valor> filhoDireito) {
-		this.filhoDireito = filhoDireito;
+	public void setDireito(No<Chave, Valor> direito) {
+		this.direito = direito;
 	}
 
 	public Chave getChave() {
@@ -70,6 +74,5 @@ public class No<Chave extends Comparable<Chave>, Valor> {
 	public void setValor(Valor valor) {
 		this.valor = valor;
 	}
-	
-	
+
 }

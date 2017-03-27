@@ -1,13 +1,13 @@
 package aula1;
 
-public class Chave<T> {
+public class Chave{
 	
 	private String chave;
 	
 	public Chave(){}
-	
+
 	public Chave(String chave) {
-		this.chave = chave;
+		this.setChave(chave);
 	}
 
 	public String getChave() {
