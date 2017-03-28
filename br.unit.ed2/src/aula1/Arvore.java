@@ -1,5 +1,6 @@
 package aula1;
 
+
 public class Arvore<chave, valor> {
 	
 	 private No raiz;
@@ -8,15 +9,15 @@ public class Arvore<chave, valor> {
 		raiz = null;
 	}
 	
-	private No inserir(Chave chave,Valor valor) {
-        No novoNo = new No<Chave, Valor>();
+	private No inserir(Chave chave,Valor valor, No pai, Lado lado) {
+		No novoNo = new No ();
         
-        if(this.raiz == null) {
-            this.raiz = novoNo;
+        if(pai == null) {
+            pai = novoNo;
         } else {
             novoNo.setPai(null);
             
-            if(valor < novoNo.getValor()) {
+            if(novoNo.getValor()) {
             	novoNo.setEsquerdo(novoNo);
             } else {
                 if(valor > novoNo.getValor()) {

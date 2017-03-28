@@ -12,6 +12,12 @@ public class No<Chave extends Comparable<Chave> , Valor> {
 	
 	public No(){ }
 	
+	public No(Chave chave, Valor valor, No<Chave, Valor> pai, Lado lado) {
+		this.setChave(chave);
+		this.setValor(valor);
+		this.setPai(pai);
+		
+	}
 	
 	public No(Chave chave, Valor valor, No<Chave, Valor> pai, No<Chave, Valor> esquerdo, No<Chave, Valor> meio,
 			No<Chave, Valor> direito) {
