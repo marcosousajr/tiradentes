@@ -7,7 +7,7 @@ import Biblioteca.MyIterator;
 import Biblioteca.NoArvoreBin;
 
 
-public class ArvoreBusca<E extends Comparable<E>> extends ColecaoComparavel<E> {
+public class ArvoreBusca<Chave extends Comparable<Chave>, Valor> extends ColecaoComparavel<E> {
 
     protected ArvoreBin<E> arvore = new ArvoreBin<>();
 

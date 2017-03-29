@@ -1,47 +1,34 @@
 package me;
 
-public class Aluno implements Comparable<Aluno> {
+public class Aluno {
 
-    private String rgAluno;
-    private String nmAluno;
-    private ArvoreBusca<Turma> turmas = new ArvoreBusca<>();
-
-    public Aluno(String rgAluno) {
-        this.rgAluno = rgAluno;
-    }
-
-    public String getRgAluno() {
-		return rgAluno;
+    private Rg rg;
+    private String nome;
+    
+    public Aluno(){}
+    
+	public Aluno(Rg rg, String nome) {
+		this.setRg(rg);
+		this.setNome(nome);
+	}
+	public Rg getRg() {
+		return rg;
+	}
+	public void setRg(Rg rg) {
+		this.rg = rg;
+	}
+	public String getNome() {
+		return nome;
+	}
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	
+	@Override
+	public String toString() {
+		return "Aluno: "+getRg()+" - "+getNome();
 	}
 
-	public void setRgAluno(String rgAluno) {
-		this.rgAluno = rgAluno;
-	}
-
-	public String getNmAluno() {
-		return nmAluno;
-	}
-
-	public void setNmAluno(String nmAluno) {
-		this.nmAluno = nmAluno;
-	}
-
-	public ArvoreBusca<Turma> getTurmas() {
-        return turmas;
-    }
-
-    public void setTurmas(ArvoreBusca<Turma> turmas) {
-        this.turmas = turmas;
-    }
-
-    @Override
-    public int compareTo(Aluno o) {
-        if (o.rgAluno.compareTo(getRgAluno()) < 0) {
-            return -1;
-        }
-        if (o.rgAluno.compareTo(getRgAluno()) == 0) {
-            return 0;
-        }
-        return 1;
-    }    
+	
+   
 }
