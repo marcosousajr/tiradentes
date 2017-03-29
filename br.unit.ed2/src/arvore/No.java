@@ -1,4 +1,4 @@
-package aula1;
+package arvore;
 
 public class No<Chave extends Comparable<Chave> , Valor> {
 	

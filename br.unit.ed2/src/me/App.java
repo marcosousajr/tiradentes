@@ -4,6 +4,41 @@ public class App {
 
 	static ArvoreBinBusca<CodTurma, Turma> turmas = new ArvoreBinBusca<CodTurma, Turma>();
 	static ArvoreBinBusca<Rg, Aluno> alunos = new ArvoreBinBusca<Rg, Aluno>();
+	
+	public static void main(String[] args) {
+		int opcao;
+		do {
+			Keyboard.clrscr();
+			opcao = Keyboard.menu("Incluir turma/Remover turma/Listar alunos turma/Listar turmas/"
+					+ "Incluir Aluno/Incluir reserva/Cancelar reservas");
+
+			switch (opcao) {
+			case 1:
+				incluirTurma();
+				break;
+			case 2:
+				removerTurma();
+				break;
+			case 3:
+				listarAlunosTurma();
+				break;
+			case 4:
+				listarTurmas();
+				break;
+			case 5:
+				incluirAluno();
+				break;
+			case 6:
+				incluirReserva();
+				break;
+			case 7:
+				cancelarReserva();
+				break;
+
+			}
+		} while (opcao < 8);
+		System.out.println("\nFim do programa");
+	}
 
 	static void incluirTurma() {
 		char resp;
@@ -118,38 +153,5 @@ public class App {
 		} while (resp == 's');
 	}
 
-	public static void main(String[] args) {
-		int opcao;
-		do {
-			Keyboard.clrscr();
-			opcao = Keyboard.menu("Incluir turma/Remover turma/Listar alunos turma/Listar turmas/"
-					+ "Incluir Aluno/Incluir reserva/Cancelar reservas");
-
-			switch (opcao) {
-			case 1:
-				incluirTurma();
-				break;
-			case 2:
-				removerTurma();
-				break;
-			case 3:
-				listarAlunosTurma();
-				break;
-			case 4:
-				listarTurmas();
-				break;
-			case 5:
-				incluirAluno();
-				break;
-			case 6:
-				incluirReserva();
-				break;
-			case 7:
-				cancelarReserva();
-				break;
-
-			}
-		} while (opcao < 8);
-		System.out.println("\nFim do programa");
-	}
+	
 }

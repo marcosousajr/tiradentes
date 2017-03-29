@@ -2,6 +2,8 @@
 package me;
 import java.util.Scanner;
 
+import diversos.MyDate;
+
 public class Keyboard{
 
 	public static int readInt(String texto) {
