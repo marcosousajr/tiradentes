@@ -29,7 +29,7 @@ public class No<Chave extends Comparable<Chave> , Valor> {
 		this.setDireito(direito);
 	}
 
-	public int comparaTo(Chave chv){
+	public int compareTo(Chave chv){
 		return this.getChave().compareTo(chv);
 	}
 	
