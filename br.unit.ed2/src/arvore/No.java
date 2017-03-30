@@ -12,10 +12,9 @@ public class No<Chave extends Comparable<Chave> , Valor> {
 	
 	public No(){ }
 	
-	public No(Chave chave, Valor valor, No<Chave, Valor> pai, Lado lado) {
+	public No(Chave chave, Valor valor, Lado lado) {
 		this.setChave(chave);
 		this.setValor(valor);
-		this.setPai(pai);
 		
 	}
 	

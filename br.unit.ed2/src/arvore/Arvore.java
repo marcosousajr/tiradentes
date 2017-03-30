@@ -3,7 +3,6 @@ package arvore;
 import java.util.ArrayList;
 import java.util.Collection;
 
-import arvoreBinBusca.NoBinBusca;
 
 public class Arvore<Chave extends Comparable<Chave>, Valor> implements IArvore<Chave, Valor> {
 	
@@ -12,7 +11,7 @@ public class Arvore<Chave extends Comparable<Chave>, Valor> implements IArvore<C
 
 	@Override
 	public boolean inserir(Chave chave, Valor valor, Lado lado) {
-		No<Chave, Valor> no = new No<Chave, Valor>(chave, valor,raiz, lado);
+		No<Chave, Valor> no = new No<Chave, Valor>(chave, valor,lado);
 		if (raiz == null) {
 			raiz = no;
 			list.add(valor);
@@ -84,9 +83,8 @@ public class Arvore<Chave extends Comparable<Chave>, Valor> implements IArvore<C
 		}
 
 	@Override
-	public Collection<Valor> obterValor() {
-		// TODO Auto-generated method stub
-		return null;
+	public Collection<Valor> listarValores() {
+		return list;
 	}
 
 	@Override
