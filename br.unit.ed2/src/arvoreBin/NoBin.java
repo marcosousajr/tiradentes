@@ -1,21 +1,22 @@
 package arvoreBin;
 
 @SuppressWarnings("hiding")
-public class NoBin<Chave extends Comparable<Chave> , Valor> {
+public class NoBin<Chave extends Comparable<Chave> , Valor> implements Comparable<Chave>{
 	
-	NoBin<Chave, Valor> pai;
-	NoBin<Chave, Valor> esquerdo;
-	NoBin<Chave, Valor> direito;
-
-	Chave chave;
-	Valor valor;
+	private NoBin<Chave, Valor> pai;
+	private NoBin<Chave, Valor> esquerdo;
+	private NoBin<Chave, Valor> direito;
+	private Chave chave;
+	private Valor valor;
 	
 	public NoBin(){ }
 	
 	public NoBin(Chave chave, Valor valor, LadoBin lado) {
+		this.setPai(null);
+		this.setEsquerdo(null);
+		this.setDireito(null);
 		this.setChave(chave);
 		this.setValor(valor);
-		
 	}
 	
 	public NoBin(Chave chave, Valor valor, NoBin<Chave, Valor> pai, NoBin<Chave, Valor> esquerdo, NoBin<Chave, Valor> direito) {
@@ -26,10 +27,6 @@ public class NoBin<Chave extends Comparable<Chave> , Valor> {
 		this.setDireito(direito);
 	}
 
-	public int compareTo(Chave chv){
-		return this.getChave().compareTo(chv);
-	}
-	
 	public NoBin<Chave, Valor> getPai() {
 		return pai;
 	}
@@ -68,6 +65,19 @@ public class NoBin<Chave extends Comparable<Chave> , Valor> {
 
 	public void setValor(Valor valor) {
 		this.valor = valor;
+	}
+	
+	@Override
+	public int compareTo(Chave o) {
+		if (this.getChave().compareTo(o) < 0) {
+			return -1;
+		} else if (this.getChave().compareTo(o) > 0) {
+			return 1;
+		} else if (this.getChave().compareTo(o) == 0) {
+			return this.getChave().compareTo(o);
+		} else {
+			return 0;
+		}
 	}
 
 }

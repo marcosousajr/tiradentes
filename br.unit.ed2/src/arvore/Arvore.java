@@ -15,7 +15,7 @@ public class Arvore<Chave extends Comparable<Chave>, Valor> implements IArvore<C
 	}
 
 	@Override
-	public boolean inserir(Chave chave, Valor valor, arvore.Lado lado) {
+	public boolean inserir(Chave chave, Valor valor, Lado lado) {
 		No<Chave, Valor> no = new No<Chave, Valor>(chave, valor, lado);
 		if (raiz == null) {
 			raiz = no;
@@ -32,7 +32,6 @@ public class Arvore<Chave extends Comparable<Chave>, Valor> implements IArvore<C
 			if (esquerdo == null) {
 				raiz.setEsquerdo(no);
 				no.setPai(raiz);
-				//list.add(no);
 				return true;
 			} else {
 				return this.inserir(no, esquerdo);
@@ -42,7 +41,6 @@ public class Arvore<Chave extends Comparable<Chave>, Valor> implements IArvore<C
 			if (meio == null) {
 				raiz.setMeio(no);
 				no.setPai(raiz);
-				//list.add(no);
 				return true;
 			} else {
 				return this.inserir(no, meio);
@@ -52,7 +50,6 @@ public class Arvore<Chave extends Comparable<Chave>, Valor> implements IArvore<C
 			if (direito == null) {
 				raiz.setDireito(no);
 				no.setPai(raiz);
-				//list.add(no);
 				return true;
 			} else {
 				return this.inserir(no, direito);
