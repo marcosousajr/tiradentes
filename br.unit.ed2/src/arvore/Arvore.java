@@ -1,20 +1,25 @@
 package arvore;
 
-import java.util.ArrayList;
 import java.util.Collection;
 
-
+@SuppressWarnings("hiding")
 public class Arvore<Chave extends Comparable<Chave>, Valor> implements IArvore<Chave, Valor> {
 	
 	private No<Chave, Valor> raiz;
-	private ArrayList<Valor> list;
+	
+	public Arvore() {}
+	
+
+	public Arvore(No<Chave, Valor> raiz) {
+		this.raiz = raiz;
+	}
 
 	@Override
-	public boolean inserir(Chave chave, Valor valor, Lado lado) {
-		No<Chave, Valor> no = new No<Chave, Valor>(chave, valor,lado);
+	public boolean inserir(Chave chave, Valor valor, arvore.Lado lado) {
+		No<Chave, Valor> no = new No<Chave, Valor>(chave, valor, lado);
 		if (raiz == null) {
 			raiz = no;
-			list.add(valor);
+			//list.add(no);
 			return true;
 		} else {
 			return inserir(no, raiz);
@@ -27,7 +32,7 @@ public class Arvore<Chave extends Comparable<Chave>, Valor> implements IArvore<C
 			if (esquerdo == null) {
 				raiz.setEsquerdo(no);
 				no.setPai(raiz);
-				list.add(no.getValor());
+				//list.add(no);
 				return true;
 			} else {
 				return this.inserir(no, esquerdo);
@@ -37,7 +42,7 @@ public class Arvore<Chave extends Comparable<Chave>, Valor> implements IArvore<C
 			if (meio == null) {
 				raiz.setMeio(no);
 				no.setPai(raiz);
-				list.add(no.getValor());
+				//list.add(no);
 				return true;
 			} else {
 				return this.inserir(no, meio);
@@ -47,7 +52,7 @@ public class Arvore<Chave extends Comparable<Chave>, Valor> implements IArvore<C
 			if (direito == null) {
 				raiz.setDireito(no);
 				no.setPai(raiz);
-				list.add(no.getValor());
+				//list.add(no);
 				return true;
 			} else {
 				return this.inserir(no, direito);
@@ -83,8 +88,8 @@ public class Arvore<Chave extends Comparable<Chave>, Valor> implements IArvore<C
 		}
 
 	@Override
-	public Collection<Valor> listarValores() {
-		return list;
+	public Collection<No> listarValores() {
+		return null;
 	}
 
 	@Override
@@ -92,6 +97,6 @@ public class Arvore<Chave extends Comparable<Chave>, Valor> implements IArvore<C
 		// TODO Auto-generated method stub
 		return false;
 	}
-	
-	
+
+		
 }

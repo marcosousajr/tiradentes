@@ -1,12 +1,14 @@
 package arvore;
 
+@SuppressWarnings("hiding")
 public class No<Chave extends Comparable<Chave> , Valor> {
 	
 	No<Chave, Valor> pai;
 	No<Chave, Valor> esquerdo;
 	No<Chave, Valor> meio;
 	No<Chave, Valor> direito;
-
+	Lado lado;
+	
 	Chave chave;
 	Valor valor;
 	

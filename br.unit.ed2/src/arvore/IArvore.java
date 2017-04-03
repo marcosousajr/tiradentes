@@ -8,7 +8,7 @@ public interface IArvore<Chave extends Comparable<Chave>, Valor> {
 
 	public No<Chave, Valor> obterNo(Chave chave);
 
-	public Collection<Valor> listarValores();
+	public Collection<No> listarValores();
 
 	public boolean remover(Chave chave);
 
