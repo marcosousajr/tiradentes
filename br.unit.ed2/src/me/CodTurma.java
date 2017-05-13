@@ -34,5 +34,4 @@ public class CodTurma implements Comparable<CodTurma> {
 	public String toString() {
 		return "CodTurma: " + getCodTurma();
 	}
-
 }
