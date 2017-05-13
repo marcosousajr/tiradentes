@@ -4,7 +4,7 @@ import me.Keyboard;
 import me2.Rg;
 import me2.QueryHashTable;
 
-public class App {
+public class Main {
 	
 	
 	static QueryHashTable alunos = new QueryHashTable();
