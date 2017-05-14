@@ -1,0 +1,200 @@
+-2840007;Joao Francisco Vargas de F M da Costa
+-2815250;Fernanda Lago de Araujo
+-2799051;Adriana Mari Mandacaru Guerra
+-2682070;Flavia Gasperini
+-2666550;Diego Celindo
+-2653064;Juliana Ferreira Mota
+-2505496;Huk Hyung Jung
+-2495415;Julia Yen
+-2255039;Giuliano Melragno Lodi
+-2254948;Igor Jovanovic
+-2119509;Fernando Sarin da Mota E Albuquerque
+-2108053;Francisca Guerreiro Andrade
+-2100291;Isabella Campoli Peano
+-2099355;Gabriela Macedo Pereira de Souza
+-1974722;Guilherme Malta Felix da Silva
+-1792794;Helena Moraes Oliveira
+-1398073;Gabrielle Gilio
+-1391610;Felipe Haga Koshino
+-1386683;Jonatas Ronque Aljonas Fernandes
+-1212953;Alice Calori Filisetti da Silva
+-1179784;Janete Domingues Doce
+-1178682;Jose Celso Macruz de Sa
+-1157179;Henrique Lopes Ferreira
+-1153647;Jackson Epifanio da Rocha Neves
+10;Gabriela Lie Katayama
+78;Andre Henrique Moschetta Pereira
+122;Julia Castelo Pedrotti
+139;Andre Marcelli Ruzzi
+154;Acassio Silva Guimaraes
+155;Valquiria Parnaiba Ferreira
+186;Lucas Soares dos Santos
+200;Daniel Caetano da Silva
+208;Tatianamidori Uemura Kawaguti
+217;Raul Alves da Cunha Silveira Gioielli
+222;Guilherme Augusto Martins
+237;Gabriella de Oliveira Figueira
+267;Gizele Regina Moreira dos Santos
+351;Daniel Pereira Rodrigues
+454;Ana Carolina Oliveira de Carvalho
+472;Leonardo Coelho Botelho
+497;Kathelin Cristina Cavalcante da Cruz
+499;Mariana Bruni Marques do Prado E Silva
+501;Ana Luiza Moraes Mascarenhas
+528;Vinicius Ernani Barros Azevedo
+532;Andre Victor dos Santos Nakazawa
+547;Erica Varela Fioravante
+557;Davi Antonio Zau de Alvarenga
+568;Icaro Sampaio Viana
+602;Aline Sayuri Imagava
+643;Felipe Soares Moulin Pratissoli
+645;Marrary das Chagas Silva
+659;Melissa Pedroso Moura
+686;Diego Soares da Paz
+736;Carolina Leiner de Almeida
+759;Igor Paulino Mendes Soares
+767;Felipe Barizza de Souza
+771;Joyce Vilela Paiva
+773;Gabriel Aguiar Franze
+782;Natalia P Namesnik
+864;Monica Mendes Goncalves
+896;Marcos Dalpra Neto
+904;Lucas Afonso Fernandes dos Santos
+929;Julia Ferreira de Abreu
+963;Stella Naomi Tanaka
+980;Taina Marinho Alcaraz
+984;Giuliana D Elia Denapoli
+1015;Aleksander Kyoshi Ogatha
+1155;Flavia Trindade Almeida da Silva
+1380;Ivy Cristina Szot
+1786;Adriano Pires de Sa do Patrocinio
+1850;Catia Santos Zanzim
+2125;Raphael de Oliveira Cerqueira
+2177;Jose Guilherme Pereira Dias Martins
+2376;Amanda Mendes Pacheco
+2420;Celso Neri Junior
+2748;Guilherme Alexandre M de O Klingelfus
+2840;Felipe Baracat Ferreira Santos
+3725;Beatriz Cappellini Dalla Vecchia
+3901;Isadora Cristina de Oliveira Peres
+3951;Fernando Luiz Malagutte
+4533;Erika de Oliveira Paulino Rosa
+4743;Sofia Colletes Ribeiro dos Reis
+4907;Pedro Henrique Vilela Carvalho
+5126;Pedro Ernesto Ruiz Bressan
+5252;Gabriela Zanini
+5448;Nathalia Lima Azevedo
+5457;Elaine Cristina Mendonca da Silva
+5601;Alexandre Lyra Alves
+6281;Matheus Matsuo Anhezini
+6293;Juliana Novaes Bueno de Camargo
+6598;Leticia Cristina Xavier
+7249;Fernando de Lima Carioca
+8401;Camillo dos Santos Neto
+8459;Victor Kenishi de Carvalho Santos
+8814;Gabriel Lima Santa Maria
+8945;Flavia Cristina Goncalves de Aquino
+9090;Joao Gabriel Danelon Vieira de Almeida
+9221;Vitor Kei Taira Tamada
+9545;Maria Isabel Gori Montes
+1000306;Daniela Maira Sobral dos Santos
+1000338;Jonatas Souza Silveira
+1000410;Kleber Costa Timoteo
+1000459;Bruna Rattis Marques Prado
+1000676;Evandro Jose dos Santos Neto
+1000893;Bruna Maria Cardoso de Andrade
+1001073;Daniel Campos Soares
+1001123;Vinicius Sousa Flores
+1001162;Filipe Azevedo Pinheiro de Souza
+1001194;Denner Andrade Alves
+1001205;Sumaya da Silva Soares
+1001251;Renato dos Santos Rodrigues
+1001301;Leticia Hartzer de Sousa
+1001319;Zainne Lima Matos
+1001575;Nayara Alves Coelho
+1001689;Helen Reis Modesto
+1001714;Andreas Reckmann Steiner
+1001739;Paloma Nunes dos Santos
+1001835;Gabriel Alves da Costa Sena
+1001874;Vinicius Sena Mendes
+1001917;Lais Ichimura Fukase
+1001963;Gabriela Naomi Haseyama dos Santos
+1001988;Caique Lopes Dias
+1002047;Icaro Francescato Tavares de Souza
+1002168;Juliana Ferreira Fontoura
+1002428;Taciana Carnauba de Oliveira
+1002442;Lucas Nunes Almeida
+1002467;Thais Freitas Carneiro
+1002517;Alessandra Coutinho de Souza
+1002613;Thais Guedes Felisbino
+1002710;Bruna Patricia Kerpen
+1002894;Leonardo Toshinobu Kimura
+1002951;Danielle Yukari Kimura
+1003099;Caroline Marques Pereira da Silva
+1003206;Lucas Silva Andre de Menezes
+1003302;Matheus de Carvalho Padua
+1003366;Barbara Ferrai Ferreira
+1003373;Victor Rodrigues da Silva
+1003520;Vinicius Conga Lima
+1003537;Vinicius Lopes Maia
+1003730;Luis Felipe de Melo Costa Silva
+1003779;Gabriel Gomes Lima
+1003843;Larissa da Silva Conceicao
+1003868;Mateus Goncalves Correa Araujo
+1003940;Jessica Mayara Andrade de Queiroz
+1004120;Karina Ferreira Baradel
+1004258;Andre dos Santos Souza
+1004468;Igor Fachini Orive
+1004482;Abidan Henrique da Silva
+1004532;Renato Monma
+1004678;Rafael Mattos da Silva
+1004742;Camila Cristina Abreu
+1004767;Cristiane Santos Oliveira
+1004856;Jessica Rolim Mathias
+1005189;Simone Miyashiro da Silva
+1005207;Felipe Suetoshi Kusuki
+1005253;Beatriz Sodre
+1005381;Sabrina Silva Viana
+1005513;Vinicius Dias de Almeida
+1005762;Gustavo Marques Benicio
+1005876;Flavio dos Santos Silva
+1005926;David Carlos Berto Borges da Silva
+1005933;Sandy Thamires Taglioni
+1005965;Rosemeire Lopes da Paixao
+1006000;Leticia Lauton Correia Alves
+1006031;Daiane Pereira da Cunha
+1006138;Juliana Ferreira Souza Conceicao
+1006160;Marcella Monteiro da Silveira
+1006202;Gabriel Nespoli Meier
+1006362;Brendon Caio Figueiredo da Silva
+1006476;Clarissa Carvalho Meneghetti de Sa
+1006526;Ana Angelica de Carvalho
+1006615;Suemy Mitie Tanaka
+1006654;Nathalia de Souza Machado dos Reis
+1006661;Jonathan Kenji Kodama
+1006729;Daiane Ribeiro de Souza
+1006818;Willian de Almeida Luz
+1006840;Raquel Reis Fernandes
+1006889;Renan Feitosa Paris
+1007069;Kaique Santhiago da Costa Afonso Geraldo
+1007083;Thiago Gomes Rios
+1007119;Julia Gotti Teixeira
+1007222;Marcelo Caribe Santos
+1007230;Jesse James de Oliveira
+1007286;Raissa Molina Silva
+1007343;Vagner Anacleto Barbosa
+1007464;Leticia Yumi Benetti da Silva
+1007578;Priscila Maria da Silva
+1007635;Alessandra Costa de Lima
+1007650;Beatriz Galindo Rodrigues
+1007674;Kassia Soares Queiroz
+1007749;Mayara Aline Martins da Silva
+1007877;Flavia Marques da Mata
+1008178;Thamires Muniz de Andrade
+1008185;Andre Oliveira dos Santos
+1008406;Nathalia Lima Durval
+1008452;Poliana de Souza Barbosa Silva
+1008534;Julio Cesar Hideaki Suyama
+1008648;Leonardo Facanha Derenze
+1008687;Rafael Campos Soares
+1008712;Felipe Oliveira de Aguiar

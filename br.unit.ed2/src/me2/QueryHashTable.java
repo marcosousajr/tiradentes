@@ -20,6 +20,7 @@ public class QueryHashTable {
 	public Boolean contem(Object chave) {
 		if (this.estrutura.containsKey(chave))
 			return true;
+		
 		return false;
 	}
 	

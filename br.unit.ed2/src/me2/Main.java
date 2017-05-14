@@ -95,7 +95,7 @@ public class Main {
 		long temIni = System.currentTimeMillis();
 		
 		if (alunos != null) {
-			alunos.listar(); //listando apenas o último
+			alunos.listar(); //listando apenas o último!!
 		}
 		System.out.println("Tabela Vazia!");
 		long temFim = System.currentTimeMillis();
