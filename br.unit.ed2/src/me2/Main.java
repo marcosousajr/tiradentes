@@ -13,7 +13,8 @@ public class Main {
 	private static QueryHashTable alunos = new QueryHashTable();
 	private static final String INSERT = "//mnt//sda4//listInsert.txt";
 	private static final String SEARCH = "//mnt//sda4//listSearch.txt";
-
+	private static final String REMOVE = "//mnt//sda4//listRemove.txt";
+	
 	public static void main(String[] args) {
 
 		int opcao;
@@ -41,8 +42,8 @@ public class Main {
 	}
 
 	static void inserir() {
-		long temIni = System.currentTimeMillis();
-		int cont=0;
+		long temIni = System.nanoTime();
+		int cont = 0;
 		try (BufferedReader br = new BufferedReader(new FileReader(INSERT))) {
 			String linhaAtual;
 			Aluno aluno = new Aluno();
@@ -51,24 +52,24 @@ public class Main {
 				Rg rg = new Rg(textoSeparado[0]);
 				aluno.setRg(rg);
 				aluno.setNome(textoSeparado[1]);
-				alunos.inserir(rg, aluno);
+				alunos.inserir(rg.getRg(), aluno.getNome());
 				cont++;
 			}
 
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		long temFim = System.currentTimeMillis();
+		long temFim = System.nanoTime();
 		System.out.println("Tempo total Inserir " + (temFim - temIni));
-		System.out.println("Nº de inserções : " + cont);
+		System.out.println("Nº de Inserções : " + cont);
 		System.out.println("Tamanho da tabela : " + alunos.tamanho());
-		
+
 		Keyboard.waitEnter();
 	}
 
-	static void buscar() { //não encontrou!
-		long temIni = System.currentTimeMillis();
-		int cont=0;
+	static void buscar() {
+		long temIni = System.nanoTime();
+		int cont = 0;
 		try (BufferedReader br = new BufferedReader(new FileReader(SEARCH))) {
 			String linhaAtual;
 
@@ -76,43 +77,54 @@ public class Main {
 				while ((linhaAtual = br.readLine()) != null) {
 					String[] textoSeparado = linhaAtual.split(";|;\\s");
 					Rg rg = new Rg(textoSeparado[0]);
-					alunos.buscar(rg);
+					alunos.buscar(rg.getRg());
 					cont++;
 				}
-			}
-			System.out.println("Tabela Vazia!");
+			} else
+				System.out.println("Tabela Vazia!");
+
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 
-		long temFim = System.currentTimeMillis();
+		long temFim = System.nanoTime();
 		System.out.println("Tempo total Buscar " + (temFim - temIni));
 		System.out.println("Nº de Buscas : " + cont);
 		Keyboard.waitEnter();
 	}
 
 	static void listar() {
-		long temIni = System.currentTimeMillis();
-		
+		long temIni = System.nanoTime();
 		if (alunos != null) {
-			alunos.listar(); //listando apenas o último!!
-		}
-		System.out.println("Tabela Vazia!");
-		long temFim = System.currentTimeMillis();
+			alunos.listar();
+		} else
+			System.out.println("Tabela Vazia!");
+		long temFim = System.nanoTime();
 		System.out.println("Tempo total Listar " + (temFim - temIni));
 		Keyboard.waitEnter();
 
 	}
 
 	static void remover() {
-		long temIni = System.currentTimeMillis();
-		if (alunos != null) {
-			String rgAluno = Keyboard.readString("Digite o rg");
-			Rg rg = new Rg(rgAluno);
-			alunos.remover(rg);
+		long temIni = System.nanoTime();
+
+		try (BufferedReader br = new BufferedReader(new FileReader(REMOVE))) {
+			String linhaAtual;
+
+			if (alunos != null) {
+				while ((linhaAtual = br.readLine()) != null) {
+					String[] textoSeparado = linhaAtual.split(";|;\\s");
+					Rg rg = new Rg(textoSeparado[0]);
+					alunos.remover(rg.getRg());
+				}
+			} else
+				System.out.println("Tabela Vazia!");
+
+		} catch (IOException e) {
+			e.printStackTrace();
 		}
-		System.out.println("Tabela Vazia!");
-		long temFim = System.currentTimeMillis();
+
+		long temFim = System.nanoTime();
 		System.out.println("Tempo total Remover " + (temFim - temIni));
 		Keyboard.waitEnter();
 	}

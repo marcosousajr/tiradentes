@@ -20,11 +20,11 @@ public class QueryHashTable {
 	public Boolean contem(Object chave) {
 		if (this.estrutura.containsKey(chave))
 			return true;
-		
+
 		return false;
 	}
-	
-	public int tamanho(){
+
+	public int tamanho() {
 		return this.estrutura.size();
 	}
 
@@ -48,8 +48,8 @@ public class QueryHashTable {
 	public void listar() {
 		Enumeration<Object> keys = this.estrutura.keys();
 		while (keys.hasMoreElements())
-			System.out.println(this.estrutura.get(keys.nextElement()));
-			}
+			this.estrutura.get(keys.nextElement());
+	}
 
 	public Boolean remover(Object chave) {
 		if (this.estrutura.containsKey(chave)) {

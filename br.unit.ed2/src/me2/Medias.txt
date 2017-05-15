@@ -1,0 +1,78 @@
+Tempo de execução 20mil
+INSERIR
+Teste 1 - 55951222
+Teste 2 - 39034356
+Teste 3 - 43221605
+Teste 4 - 42566166
+Teste 5 - 38484840
+tempo total = 219258189
+
+Tempo Médio final = 43851637,8
+Tempo final em seg. 0,04s
+
+BUSCAR CHAVE NEGATIVO
+Teste 1 - 576190
+Teste 2 - 521046
+Teste 3 - 267319
+Teste 4 - 378716
+Teste 5 - 327221
+tempo total = 2070492
+
+Tempo Médio final = 414098,4
+Tempo final em seg.= 0,0004s
+
+BUSCAR CHAVE PEQUENA 
+Teste 1 - 372276
+Teste 2 - 283421
+Teste 3 - 231535
+Teste 4 - 414140
+Teste 5 - 230112
+tempo total = 1531484
+
+Tempo Médio final = 306296,8
+Tempo final em seg.= 0,0003s
+
+BUSCAR CHAVE GRANDE  
+Teste 1 - 586165
+Teste 2 - 264870
+Teste 3 - 280857
+Teste 4 - 331414
+Teste 5 - 274507
+tempo total = 1737813
+
+Tempo Médio final = 347562,6
+Tempo final em seg.= 0,0003s
+
+BUSCAR CHAVE INESISTENTE  
+Teste 1 - 384148
+Teste 2 - 303835
+Teste 3 - 290622
+Teste 4 - 244194
+Teste 5 - 221811
+tempo total = 1444610
+
+Tempo Médio final = 288922
+Tempo final em seg.= 0,0003s
+
+LISTAR
+Teste 1 - 5024758
+Teste 2 - 9506734
+Teste 3 - 4503498
+Teste 4 - 2081970
+Teste 5 - 3038519
+tempo total = 24155479
+
+Tempo Médio final = 4831095,8
+Tempo final em seg.= 0,0048s
+
+REMOVER
+Teste 1 - 171617
+Teste 2 - 181126
+Teste 3 - 184111
+Teste 4 - 196971
+Teste 5 - 168788
+tempo total = 902613
+
+Tempo Médio final = 180522,6
+Tempo final em seg.= 0,0002s
+
